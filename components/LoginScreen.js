@@ -3,11 +3,14 @@ import {
   StyleSheet,
   Text,
   View,
-  TextInput
+  TextInput,
+  TouchableOpacity,
 } from 'react-native'
 
 class LoginScreen extends Component {
+
   render() {
+    const { backToIntro } = this.props;
     const formGroup = (title) => {
       return (
         <View style={styles.formGroup}>
@@ -30,9 +33,16 @@ class LoginScreen extends Component {
     }
     return (
       <View style={styles.container}>
-        <Text style={styles.header}>
-          Login
-        </Text>
+        <TouchableOpacity onPress={backToIntro} style={styles.backButton}>
+          <Text style={styles.backText}>
+            Back
+          </Text>
+        </TouchableOpacity>
+        <View>
+          <Text style={styles.header}>
+            Login
+          </Text>
+        </View>
         {formGroup()}
         <View style={styles.footer}>
           <Text style={styles.footerText}>(c) Yoni Weisbrod 2016</Text>
@@ -47,15 +57,21 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#4A90E2',
     flexWrap: 'wrap',
-    justifyContent: 'space-around',
+    justifyContent: 'space-between',
     flexDirection: 'column',
     alignItems: 'center',
-
   },
   header: {
     fontSize: 50,
     color: 'white',
-    marginBottom: -100
+    marginTop: -20
+  },
+  backButton: {
+    alignSelf: 'flex-start',
+    backgroundColor: 'white',
+    padding: 10,
+    marginLeft: 10,
+    marginTop: 40
   },
   formGroup: {
     flexDirection: 'row',
@@ -66,7 +82,11 @@ const styles = StyleSheet.create({
   },
   labelText: {
     fontWeight: 'bold',
-    fontSize: 20
+    fontSize: 20,
+  },
+  backText: {
+    color: '#4A90E2',
+    fontSize: 22
   },
   inputText: {
     height: 40,
@@ -92,7 +112,6 @@ const styles = StyleSheet.create({
   footer: {
     alignSelf: 'flex-end',
     marginRight: 15,
-    marginBottom: -50
   },
   footerText: {
     color: 'white'

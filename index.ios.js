@@ -29,6 +29,12 @@ class FlexTest extends Component {
     });
   }
 
+  backToIntro() {
+    this.setState({
+      currentScreen: "intro"
+    });
+  }
+
   render() {
     const intro = (
         <View style={styles.container}>
@@ -55,9 +61,9 @@ class FlexTest extends Component {
         </View>
     )
     if (this.state.currentScreen == "intro") {
-      return <LoginScreen />;
+      return intro;
     } else if (this.state.currentScreen == "login") {
-      return <LoginScreen />;
+      return <LoginScreen backToIntro={this.backToIntro.bind(this)} />;
     }
   }
 }
