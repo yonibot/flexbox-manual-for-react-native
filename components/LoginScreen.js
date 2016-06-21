@@ -55,7 +55,7 @@ class LoginScreen extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#4A90E2',
+    backgroundColor: '#1a3d66',
     flexWrap: 'wrap',
     justifyContent: 'space-between',
     flexDirection: 'column',
@@ -64,17 +64,17 @@ const styles = StyleSheet.create({
   header: {
     fontSize: 50,
     color: 'white',
-    marginTop: -50
+    marginTop: -100
   },
   backButton: {
     alignSelf: 'flex-start',
-    backgroundColor: 'white',
-    padding: 10,
+    backgroundColor: '#527298',
+    padding: 5,
     marginLeft: 10,
     marginTop: 40
   },
   formGroup: {
-    marginTop: -40,
+    marginTop: -70,
     flexDirection: 'row',
     height: 100
   },
@@ -86,8 +86,8 @@ const styles = StyleSheet.create({
     fontSize: 20,
   },
   backText: {
-    color: '#4A90E2',
-    fontSize: 22
+    color: 'white',
+    fontSize: 12,
   },
   inputText: {
     height: 40,

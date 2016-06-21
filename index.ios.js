@@ -49,12 +49,12 @@ class FlexTest extends Component {
             </TouchableOpacity>
             <TouchableHighlight>
               <Text style={[styles.itemBox, styles.tweets]}>
-                Tweets Page
+                Example 2
               </Text>
             </TouchableHighlight>
             <TouchableHighlight>
               <Text style={[styles.itemBox, styles.foursquares]}>
-                FourSquares
+                Example 3
               </Text>
             </TouchableHighlight>
           </View>
