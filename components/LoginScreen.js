@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
   header: {
     fontSize: 50,
     color: 'white',
-    marginTop: -20
+    marginTop: -50
   },
   backButton: {
     alignSelf: 'flex-start',
@@ -74,6 +74,7 @@ const styles = StyleSheet.create({
     marginTop: 40
   },
   formGroup: {
+    marginTop: -40,
     flexDirection: 'row',
     height: 100
   },

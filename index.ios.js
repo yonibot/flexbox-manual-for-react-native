@@ -78,7 +78,7 @@ const styles = StyleSheet.create({
   },
   heading: {
     marginTop: -30,
-    fontSize: 60,
+    fontSize: 70,
     alignSelf: 'flex-end',
     lineHeight: 50,
     paddingTop: 30,
