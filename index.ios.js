@@ -11,7 +11,6 @@ import {
   Text,
   View,
   TouchableOpacity,
-  TouchableHighlight
 } from 'react-native';
 import LoginScreen from './components/LoginScreen'
 
@@ -47,16 +46,16 @@ class FlexTest extends Component {
                 Login Screen
               </Text>
             </TouchableOpacity>
-            <TouchableHighlight>
+            <TouchableOpacity>
               <Text style={[styles.itemBox, styles.tweets]}>
-                Example 2
+                Button 2
               </Text>
-            </TouchableHighlight>
-            <TouchableHighlight>
+            </TouchableOpacity>
+            <TouchableOpacity>
               <Text style={[styles.itemBox, styles.foursquares]}>
-                Example 3
+                Button 3
               </Text>
-            </TouchableHighlight>
+            </TouchableOpacity>
           </View>
         </View>
     )
