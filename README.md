@@ -1,4 +1,6 @@
-### A Mini-Course on React Native Flexbox
+[Blog post](https://medium.com/@yoniweisbrod/a-mini-course-on-react-native-flexbox-2832a1ccc6#.gz4vqqv7o) converted to Markdown via the [Convert Medium to Markdown](https://chrome.google.com/webstore/detail/convert-medium-posts-to-m/aelnflnmpbjgipamcogpdoppjbebnjea?hl=en) extension
+
+# A Mini-Course on React Native Flexbox
 
 Flexbox solves design issues that are particularly challenging on mobile, and it
 does so strikingly well — without requiring hacky CSS or Javascript tricks.
